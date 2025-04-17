@@ -60,15 +60,27 @@ body {
     --color-secondary: #64748b;
     --color-white: #1e1e1e;
 }
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #e0e0e0;
+/* Add responsive typography */
+@media (max-width: 576px) {
+    .text-xl {
+        font-size: 1.25rem;
     }
-    .text-primary { color: #81d4fa; }
-    .text-secondary { color: #b0bec5; }
-    .text-success { color: #80cbc4; }
-    .text-danger { color: #ef9a9a; }
+
+    .text-lg {
+        font-size: 1rem;
+    }
+
+    .text-md {
+        font-size: 0.875rem;
+    }
+}
+
+/* Add more padding and margins for mobile screens */
+@media (max-width: 576px) {
+    .p-lg {
+        padding: var(--spacing-sm);
+    }
+    .mb-lg {
+        margin-bottom: var(--spacing-sm);
+    }
 }
