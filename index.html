@@ -53,6 +53,10 @@
     </div>
 
     <!-- Utilities Example -->
+    <div class="flex flex-col sm:flex-row md:justify-between px-sm md:px-lg">
+        <div class="text-sm sm:text-md md:text-lg p-sm sm:p-md">Responsive content</div>
+    </div>
+    
     <h2 class="text-xl mb-sm">Utility Classes</h2>
     <div class="card mb-sm p-md">
         <p class="text-sm text-muted mb-sm">This uses text + margin + padding utilities.</p>
@@ -80,6 +84,21 @@
     <footer class="text-center text-sm mt-lg">
         Built with ❤️ using Flexify.css
     </footer>
+
+    <script>
+
+        function toggleNavbar() {
+            const navbarLinks = document.querySelector('.navbar-links');
+            navbarLinks.classList.toggle('active');
+        }
+    
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+            const btn = document.querySelector('.btn-outline');
+            btn.textContent = document.body.classList.contains('dark') ? '🌞 Light Mode' : '🌙 Dark Mode';
+        }
+    
+        </script>
 
 </body>
 
