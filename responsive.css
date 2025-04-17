@@ -1,0 +1,93 @@
+/* ========== Responsive Styles ========== */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6,
+    .col-4 {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .text-xl {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: var(--spacing-sm);
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    footer {
+        font-size: var(--font-size-sm);
+        margin-top: var(--spacing-md);
+    }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+    .text-xl {
+        font-size: 1.25rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-body {
+        font-size: 0.875rem;
+    }
+
+    .alert {
+        font-size: 0.875rem;
+    }
+}
+
+/* ============================
+   Media Queries for Flexify.css
+   ============================ */
+
+/* SMALL DEVICES - Phones (≤ 600px) */
+@media (max-width: 600px) {
+    .p-lg {
+      padding: var(--spacing-md);
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-links {
+      margin-top: var(--spacing-sm);
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+}
